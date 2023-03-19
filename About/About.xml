@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Rimcuisine 2: Unofficial Biome Patches</name>
+	<author>tuzet2</author>
+	<url></url>
+	<packageId>tuzet2.RC2.UnofficialBiomePatches</packageId>
+	<!--Internal mod version 1.0.0-->
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<description>
+This mod patches biomes added by other mods, so they can grow biome specific plants from Rimcuisine 2. This mod is aimed to be balanced for the specific biome. Normally only generic crops may be grown in them.
+The only dependencies are the four Rimcuisine 2 mods by Mlie (core, meals and munchies, bottling and booze, smokes and shrooms), biome mods are optional.
+
+Currenty patched mods:
+Alpha Biomes
+Rainbeau's Realistic Planets
+	</description>
+
+	<modDependencies>
+		<li>
+			<packageId>Mlie.RC2.Core</packageId>
+			<displayName>RimCuisine 2 Core (Continued)</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2562519366</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Mlie.RC2.MaME</packageId>
+			<displayName>RimCuisine 2 Meals and Munchies Expansion (Continued)</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2069589941</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Mlie.RC2.BaBE</packageId>
+			<displayName>RimCuisine 2: Bottling and Booze Expansion (Continued)</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2069596932</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Mlie.RC2.SaSE</packageId>
+			<displayName>RimCuisine 2: Smokes and Shrooms Expansion (Continued)</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2069579592</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+</ModMetaData>

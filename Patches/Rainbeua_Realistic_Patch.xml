@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Biomes Stuff -->
+	<!-- Patches in crops to wild biomes.  Crops with excessive .0000's represent plants that are growable
+		in that biome, but don't actually show up except possibly on super rare you-should-buy-a-lottery-ticket occasions. 
+		Having them all right here helps to make making changes easier and lets modders see what spawns/grows where. 
+		All plants have the 'must be wild to sow' tag in order to make this work properly, unless of course they're meant to be grown in any biome.-->
+	<!--
+	
+	List of biomes added by Realistic Planets:
+	
+	<li>RRP_Grassland</li>			Dryer temperate forest, should match the plants in there. Conclusion: Temperate forest crops, with an advantage towards low fertility sensitivity. Include Grapes.
+	<li>RRP_Savanna</li>			Wetter the arid shrubland, and richer in plants. Mix of hardier Temperate Forest and Arid Shrubland plants.
+	<li>RRP_Steppes</li>			Should include both colder and temperate plants with low fertility sensitivity due to being highland grasslands. Grapes exculded.
+	<li>RRP_TemperateDesert</li>	Should generally match arid shrubland maybe with hardier crops from temperate forest. Conclusion: Both arid and temperate of Either and Hardy.
+	<li>RRP_Permafrost</li>			Permanently frozen surface but tundra crops could be growable in a greenhouse. 
+	<li>RRP_Oasis</li>				Abundant vegetation, desert crops included, Grapes maybe.
+	
+	-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Realistic Planets Continued</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<!--Example operation:-->
+				<!--<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName ="XXXXXX"]/wildPlants</xpath>
+					<value>
+						
+					</value>
+				</li>-->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName ="RRP_Grassland"]/wildPlants</xpath>
+					<value>
+						<!--Prefer Poaceae and grass-like plants.-->
+						<RC2_PlantOats>0.0000000000000001</RC2_PlantOats>
+						<RC2_PlantBeet>0.0000000000000001</RC2_PlantBeet>
+						<RC2_PlantSnapPeas>0.0000000000000001</RC2_PlantSnapPeas>
+						<RC2_PlantTomato>0.0000000000000001</RC2_PlantTomato>
+						<RC2_PlantAsparagus>0.0000000000000001</RC2_PlantAsparagus>
+						<RC2_PlantEggPlant>0.0000000000000001</RC2_PlantEggPlant>
+						<RC2_PlantSoybean>0.0000000000000001</RC2_PlantSoybean>
+						<RC2_PlantPumpkin>0.0000000000000001</RC2_PlantPumpkin>
+						<RC2_PlantSugarBeet>0.0000000000000001</RC2_PlantSugarBeet>
+						<RC2_PlantGrapes>0.0000000000000001</RC2_PlantGrapes>
+						<RC2_PlantTobacco>0.00000000001</RC2_PlantTobacco>
+						<RC2_PlantCarrot>0.06</RC2_PlantCarrot>
+						<RC2_PlantOnion>0.06</RC2_PlantOnion>
+						<RC2_PlantMushroom>0.02</RC2_PlantMushroom>
+						<RC2_PlantAppletree>0.03</RC2_PlantAppletree>
+						<RC2_PlantPlumTree>0.00000000001</RC2_PlantPlumTree>
+						<RC2_PlantPeachTree>0.00000000001</RC2_PlantPeachTree>
+						<RC2_PlantCherryTree>0.01</RC2_PlantCherryTree>
+						<RC2_PlantFlax>0.07</RC2_PlantFlax>
+						<RC2_PlantWheat>0.16</RC2_PlantWheat>
+						<RC2_PlantBeeTree>0.02</RC2_PlantBeeTree>
+						<RC2_PlantTruffles>0.01</RC2_PlantTruffles>
+						<RC2_PlantSugarMapleTree>0.015</RC2_PlantSugarMapleTree>
+						<!--Compared to Temperate Forest: tree commonality reduced, increased carrot and onion by 25%, wheat by 33%. Also increased flax by some.-->
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="RRP_Savanna"]/wildPlants</xpath>
+					<value>
+						<RC2_PlantSorghum>0.0000000000000001</RC2_PlantSorghum>
+						<RC2_PlantChickpeas>0.0000000000000001</RC2_PlantChickpeas>
+						<RC2_PlantAsparagus>0.0000000000000001</RC2_PlantAsparagus>
+						<RC2_PlantPumpkin>0.0000000000000001</RC2_PlantPumpkin>
+						<RC2_PlantAgave>0.0000000000000001</RC2_PlantAgave>
+						<RC2_PlantSugarBeet>0.0000000000000001</RC2_PlantSugarBeet>
+						<RC2_PlantBarley>0.6</RC2_PlantBarley>
+						<RC2_PlantFigTree>0.05</RC2_PlantFigTree>
+						<RC2_PlantOrangeTree>0.05</RC2_PlantOrangeTree>
+						<RC2_PlantFlax>0.4</RC2_PlantFlax>
+						<RC2_PlantPomegranateTree>0.00000000001</RC2_PlantPomegranateTree>
+						<RC2_PlantCoffee>0.05</RC2_PlantCoffee>
+						<RC2_PlantBeeTree>0.02</RC2_PlantBeeTree>
+						<RC2_PlantDreamflower>0.00000000001</RC2_PlantDreamflower>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="RRP_Oasis"]/wildPlants</xpath>
+					<!--Oasis: Increase tree commonality, orange and airampo both plentiful otherwise a greener desert.-->
+					<value>
+						<RC2_PlantDreamflower>0.00000000001</RC2_PlantDreamflower>
+						<RC2_PlantSorghum>0.0000000000000001</RC2_PlantSorghum>
+						<RC2_PlantChickpeas>0.0000000000000001</RC2_PlantChickpeas>
+						<RC2_PlantAsparagus>0.0000000000000001</RC2_PlantAsparagus>
+						<RC2_PlantPumpkin>0.0000000000000001</RC2_PlantPumpkin>
+						<RC2_PlantAgave>0.0000000000000001</RC2_PlantAgave>
+						<RC2_PlantMelon>0.0000000000001</RC2_PlantMelon>
+						<RC2_PlantSugarBeet>0.0000000000000001</RC2_PlantSugarBeet>
+						<RC2_PlantOnion>0.1</RC2_PlantOnion><!--Was 0.2-->
+						<RC2_PlantBarley>0.1</RC2_PlantBarley><!--Was 0.2-->
+						<RC2_PlantCactusFruit>0.7</RC2_PlantCactusFruit><!--Was 0.3-->
+						<RC2_PlantOrangeTree>0.18</RC2_PlantOrangeTree>
+						<RC2_PlantFlax>0.3</RC2_PlantFlax>
+						<RC2_PlantFigTree>0.08</RC2_PlantFigTree>
+						<RC2_PlantPomegranateTree>0.08</RC2_PlantPomegranateTree>
+						<RC2_PlantCoffee>0.15</RC2_PlantCoffee>
+						<RC2_PlantBeeTree>0.01</RC2_PlantBeeTree>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName ="RRP_Steppes"]/wildPlants</xpath>
+					<value> <!--Reduce edible plant commonality.-->
+						<RC2_PlantOats>0.0000000000000001</RC2_PlantOats>
+						<RC2_PlantBeet>0.0000000000000001</RC2_PlantBeet>
+						<RC2_PlantSnapPeas>0.0000000000000001</RC2_PlantSnapPeas>
+						<RC2_PlantTomato>0.0000000000000001</RC2_PlantTomato>
+						<RC2_PlantAsparagus>0.0000000000000001</RC2_PlantAsparagus>
+						<RC2_PlantEggPlant>0.0000000000000001</RC2_PlantEggPlant>
+						<RC2_PlantSoybean>0.0000000000000001</RC2_PlantSoybean>
+						<RC2_PlantPumpkin>0.0000000000000001</RC2_PlantPumpkin>
+						<RC2_PlantSugarBeet>0.0000000000000001</RC2_PlantSugarBeet>
+						<RC2_PlantCarrot>0.04</RC2_PlantCarrot>
+						<RC2_PlantOnion>0.04</RC2_PlantOnion>
+						<RC2_PlantMushroom>0.08</RC2_PlantMushroom>
+						<RC2_PlantAppletree>0.02</RC2_PlantAppletree>
+						<RC2_PlantPlumTree>0.02</RC2_PlantPlumTree>
+						<RC2_PlantPeachTree>0.00000000001</RC2_PlantPeachTree>
+						<RC2_PlantPecanTree>0.00000000001</RC2_PlantPecanTree>
+						<RC2_PlantCherryTree>0.01</RC2_PlantCherryTree>
+						<RC2_PlantFlax>0.1</RC2_PlantFlax>
+						<RC2_PlantWheat>0.1</RC2_PlantWheat>
+						<RC2_PlantBeeTree>0.02</RC2_PlantBeeTree>
+						<RC2_PlantTruffles>0.01</RC2_PlantTruffles>
+						<RC2_PlantSugarMapleTree>0.035</RC2_PlantSugarMapleTree>
+						<RC2_PlantShrooms>0.005</RC2_PlantShrooms>
+						<RC2_PlantTobacco>0.00000000001</RC2_PlantTobacco>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName ="RRP_TemperateDesert"]/wildPlants</xpath>
+					<value>
+						<!--Both arid and temperate or Either and Hardy.-->
+						<RC2_PlantWheat>0.05</RC2_PlantWheat>
+						<RC2_PlantSorghum>0.00000000001</RC2_PlantSorghum>
+						<RC2_PlantChickpeas>0.00000000001</RC2_PlantChickpeas>
+						<RC2_PlantSugarBeet>0.00000000001</RC2_PlantSugarBeet>
+						<RC2_PlantCarrot>0.02</RC2_PlantCarrot>
+						<RC2_PlantBeet>0.00000000001</RC2_PlantBeet>
+						<RC2_PlantAsparagus>0.00000000001</RC2_PlantAsparagus>
+						<RC2_PlantAgave>0.07</RC2_PlantAgave>
+						<RC2_PlantPumpkin>0.0000000000001</RC2_PlantPumpkin>
+						<RC2_PlantCactusFruit>0.05</RC2_PlantCactusFruit>
+						<RC2_PlantOrangeTree>0.02</RC2_PlantOrangeTree>
+						<RC2_PlantPomegranateTree>0.02</RC2_PlantPomegranateTree>
+						<RC2_PlantShrooms>0.005</RC2_PlantShrooms>
+						<RC2_PlantTobacco>0.00000000001</RC2_PlantTobacco>
+						<RC2_PlantFlax>0.03</RC2_PlantFlax>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName ="RRP_Permafrost"]/wildPlants</xpath>
+					<value>
+						<!--Juniper native, allow growing tundra crops but they will not appear naturally.-->
+						<RC2_PlantOats>0.0000000000000001</RC2_PlantOats>
+						<RC2_PlantBeet>0.0000000000000001</RC2_PlantBeet>
+						<RC2_PlantAsparagus>0.0000000000000001</RC2_PlantAsparagus>
+						<RC2_PlantSugarBeet>0.0000000000000001</RC2_PlantSugarBeet>
+						<RC2_PlantCarrot>0.000000000000001</RC2_PlantCarrot>
+						<RC2_PlantOnion>0.000000000000001</RC2_PlantOnion>
+						<RC2_PlantJuniper>0.2</RC2_PlantJuniper>
+						<RC2_PlantSugarMapleTree>0.00000000001</RC2_PlantSugarMapleTree>
+						<RC2_PlantBeeTree>0.01</RC2_PlantBeeTree>
+						<RC2_PlantBarley>0.0000000000001</RC2_PlantBarley>
+						<RC2_PlantMushroom>0.00000000001</RC2_PlantMushroom>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>

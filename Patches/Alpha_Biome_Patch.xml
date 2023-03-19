@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Biomes Stuff -->
+	<!-- Patches in crops to wild biomes.  Crops with excessive .0000's represent plants that are growable
+		in that biome, but don't actually show up except possibly on super rare you-should-buy-a-lottery-ticket occasions. 
+		Having them all right here helps to make making changes easier and lets modders see what spawns/grows where. 
+		All plants have the 'must be wild to sow' tag in order to make this work properly, unless of course they're meant to be grown in any biome.-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Biomes</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!--Example operation:-->
+			<!--<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName ="AB_IdyllicMeadows"]/wildPlants</xpath>
+					<value>
+						
+					</value>
+				</li>-->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName ="AB_IdyllicMeadows"]/wildPlants</xpath>
+					<value>
+						<RC2_PlantBarley>0.05</RC2_PlantBarley>
+						<RC2_PlantOnion>.000000001</RC2_PlantOnion>
+						<RC2_RawCabbages>.000000001</RC2_RawCabbages>
+						<RC2_PlantCarrot>0.02</RC2_PlantCarrot>
+						<RC2_PlantBeet>.000000001</RC2_PlantBeet>
+						<RC2_PlantSugarBeet>.000000001</RC2_PlantSugarBeet>
+						<RC2_PlantTomato>0.07</RC2_PlantTomato>
+						<RC2_PlantMushroom>0.01</RC2_PlantMushroom>
+						<RC2_PlantMelon>0.1</RC2_PlantMelon>
+						<RC2_PlantPumpkin>0.1</RC2_PlantPumpkin>
+						<RC2_PlantGrapes>0.05</RC2_PlantGrapes>
+						<RC2_PlantBeeTree>0.175</RC2_PlantBeeTree>
+						<!--The amount of bee trees are very high, this is intentional as the whole biome is filled with flowers. This means that sweets can be gathered easily and are not needed to be grown.-->
+						<RC2_PlantFlax>0.03</RC2_PlantFlax>
+						<RC2_PlantTobacco>0.03</RC2_PlantTobacco>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "AB_MycoticJungle"]/wildPlants</xpath>
+					<value>
+						<RC2_PlantBarley>.000000001</RC2_PlantBarley>
+						<RC2_PlantOnion>.000000001</RC2_PlantOnion>
+						<RC2_RawCabbages>.000000001</RC2_RawCabbages>
+						<RC2_PlantCucumber>.000000001</RC2_PlantCucumber>
+						<RC2_PlantTomato>.000000001</RC2_PlantTomato>
+						<RC2_PlantMushroom>0.3</RC2_PlantMushroom>
+						<RC2_PlantTruffles>0.05</RC2_PlantTruffles>
+						<RC2_PlantMelon>.000000001</RC2_PlantMelon>
+						<RC2_PlantPumpkin>.000000001</RC2_PlantPumpkin>
+						<RC2_PlantPineapple>.000000001</RC2_PlantPineapple>
+						<RC2_PlantTea>.000000001</RC2_PlantTea>
+						<RC2_PlantSugarcane>.000000001</RC2_PlantSugarcane>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "AB_GelatinousSuperorganism"]/wildPlants</xpath>
+					<value>
+						<RC2_PlantBarley>.000000001</RC2_PlantBarley>
+						<RC2_PlantOnion>0.03</RC2_PlantOnion>
+						<RC2_RawCabbages>0.08</RC2_RawCabbages>
+						<RC2_PlantCucumber>0.03</RC2_PlantCucumber>
+						<RC2_PlantSugarBeet>.000000001</RC2_PlantSugarBeet>
+						<RC2_PlantTomato>0.01</RC2_PlantTomato>
+						<RC2_PlantMelon>.000000001</RC2_PlantMelon>
+						<RC2_PlantTea>0.01</RC2_PlantTea>
+						<RC2_PlantSugarcane>0.02</RC2_PlantSugarcane>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "AB_TarPits"]/wildPlants</xpath>
+					<value>
+						<RC2_PlantSorghum>.000000001</RC2_PlantSorghum>
+						<RC2_PlantChickpeas>.000000001</RC2_PlantChickpeas>
+						<RC2_PlantEggPlant>.000000001</RC2_PlantEggPlant>
+						<RC2_PlantPepper>.000000001</RC2_PlantPepper>
+						<RC2_PlantAgave>0.05</RC2_PlantAgave>
+						<RC2_PlantCactusFruit>0.07</RC2_PlantCactusFruit>
+						<RC2_PlantCoffee>0.04</RC2_PlantCoffee>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "AB_GallatrossGraveyard"]/wildPlants</xpath>
+					<value>
+						<RC2_PlantSorghum>0.0000000000000001</RC2_PlantSorghum>
+						<RC2_PlantChickpeas>0.0000000000000001</RC2_PlantChickpeas>
+						<RC2_PlantAsparagus>0.0000000000000001</RC2_PlantAsparagus>
+						<RC2_PlantPumpkin>0.0000000000000001</RC2_PlantPumpkin>
+						<RC2_PlantAgave>0.0000000000000001</RC2_PlantAgave>
+						<RC2_PlantOnion>0.2</RC2_PlantOnion>
+						<RC2_PlantBarley>0.2</RC2_PlantBarley>
+						<RC2_PlantCactusFruit>0.3</RC2_PlantCactusFruit>
+						<RC2_PlantOrangeTree>0.05</RC2_PlantOrangeTree>
+						<RC2_PlantFlax>0.2</RC2_PlantFlax>
+						<RC2_PlantFigTree>0.05</RC2_PlantFigTree>
+						<RC2_PlantPomegranateTree>0.05</RC2_PlantPomegranateTree>
+						<RC2_PlantCoffee>0.1</RC2_PlantCoffee>
+						<RC2_PlantBeeTree>0.01</RC2_PlantBeeTree>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "AB_MechanoidIntrusion"]/wildPlants</xpath>
+					<value>
+						<RC2_PlantOats>0.01</RC2_PlantOats>
+						<RC2_PlantBarley>0.01</RC2_PlantBarley>
+						<RC2_PlantOnion>0.02</RC2_PlantOnion>
+						<RC2_PlantCarrot>0.01</RC2_PlantCarrot>
+						<RC2_PlantBeet>0.01</RC2_PlantBeet>
+						<RC2_PlantSugarBeet>.000000001</RC2_PlantSugarBeet>
+						<RC2_PlantYam>.000000001</RC2_PlantYam>
+						<RC2_PlantMushroom>0.01</RC2_PlantMushroom>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "AB_RockyCrags"]/wildPlants</xpath>
+					<value>
+						<RC2_PlantMushroom>0.2</RC2_PlantMushroom>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "AB_MiasmicMangrove"]/wildPlants</xpath>
+					<value>
+						<RC2_PlantBarley>.000000001</RC2_PlantBarley>
+						<RC2_PlantWheat>.000000001</RC2_PlantWheat>
+						<RC2_PlantQuinoa>.000000001</RC2_PlantQuinoa>
+						<RC2_PlantOnion>0.02</RC2_PlantOnion>
+						<RC2_PlantCarrot>.000000001</RC2_PlantCarrot>
+						<RC2_PlantCucumber>0.02</RC2_PlantCucumber>
+						<RC2_PlantTomato>0.02</RC2_PlantTomato>
+						<RC2_PlantMushroom>0.8</RC2_PlantMushroom>
+						<RC2_PlantEggPlant>0.02</RC2_PlantEggPlant>
+						<RC2_PlantPepper>0.02</RC2_PlantPepper>
+						<RC2_PlantMelon>.000000001</RC2_PlantMelon>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "AB_FeraliskInfestedJungle"]/wildPlants</xpath>
+					<value>
+						<RC2_PlantCucumber>0.0000000000000001</RC2_PlantCucumber>
+						<RC2_PlantYam>0.0000000000000001</RC2_PlantYam>
+						<RC2_PlantEggPlant>0.0000000000000001</RC2_PlantEggPlant>
+						<RC2_PlantPepper>0.0000000000000001</RC2_PlantPepper>
+						<RC2_PlantSoybean>0.0000000000000001</RC2_PlantSoybean>
+						<RC2_PlantMelon>0.0000000000000001</RC2_PlantMelon>
+						<RC2_PlantPumpkin>0.0000000000000001</RC2_PlantPumpkin>
+						<RC2_PlantPineapple>0.0000000000000001</RC2_PlantPineapple>
+						<RC2_PlantTea>0.0000000000000001</RC2_PlantTea>
+						<RC2_PlantQuinoa>0.02</RC2_PlantQuinoa>
+						<RC2_PlantOnion>0.03</RC2_PlantOnion>
+						<RC2_PlantMushroom>0.05</RC2_PlantMushroom>
+						<RC2_PlantPlumTree>0.03</RC2_PlantPlumTree>
+						<RC2_PlantBreadfruitTree>0.03</RC2_PlantBreadfruitTree>
+						<RC2_PlantDurianTree>0.01</RC2_PlantDurianTree>
+						<RC2_PlantBananaTree>0.02</RC2_PlantBananaTree>
+						<RC2_PlantCoconutTree>0.02</RC2_PlantCoconutTree>
+						<Plant_TreeCocoa>0.01</Plant_TreeCocoa>
+						<RC2_PlantSugarcane>0.03</RC2_PlantSugarcane>
+						<RC2_PlantBeeTree>0.01</RC2_PlantBeeTree>
+						<RC2_PlantTea>0.01</RC2_PlantTea>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "AB_PyroclasticConflagration"]/wildPlants</xpath>
+					<value>
+						<RC2_PlantCactusFruit>0.1</RC2_PlantCactusFruit>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
