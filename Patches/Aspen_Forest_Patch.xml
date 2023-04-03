@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth: Aspen</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "RG_AspenForest"]/wildPlants</xpath>
+			<value>
+				<RC2_PlantOats>0.0000000000000001</RC2_PlantOats>
+				<RC2_PlantBeet>0.0000000000000001</RC2_PlantBeet>
+				<RC2_PlantAsparagus>0.0000000000000001</RC2_PlantAsparagus>
+				<RC2_PlantSugarBeet>0.0000000000000001</RC2_PlantSugarBeet>
+				<RC2_PlantCarrot>0.07</RC2_PlantCarrot>
+				<RC2_PlantOnion>0.16</RC2_PlantOnion>
+				<RC2_PlantJuniper>0.05</RC2_PlantJuniper>
+				<RC2_PlantSugarMapleTree>0.035</RC2_PlantSugarMapleTree>
+				<RC2_PlantBeeTree>0.01</RC2_PlantBeeTree>
+				<RC2_PlantBarley>0.2</RC2_PlantBarley>
+				<RC2_PlantMushroom>0.16</RC2_PlantMushroom>
+				<!--Pumpkin is not a cold crop but in this case it is thematic as gourds grow in the Rift!-->
+				<RC2_PlantPumpkin>0.07</RC2_PlantPumpkin>
+			</value>
+		</match>
+	</Operation>
+</Patch>

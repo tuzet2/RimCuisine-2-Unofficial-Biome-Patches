@@ -4,7 +4,7 @@
 	<author>tuzet2</author>
 	<url></url>
 	<packageId>tuzet2.RC2.UnofficialBiomePatches</packageId>
-	<!--Internal mod version 1.0.0-->
+	<!--Internal mod version 1.1.0-->
 	<supportedVersions>
 		<li>1.4</li>
 	</supportedVersions>
@@ -15,6 +15,8 @@ The only dependencies are the four Rimcuisine 2 mods by Mlie (core, meals and mu
 Currenty patched mods:
 Alpha Biomes
 Rainbeau's Realistic Planets
+ReGrowth: Aspen
+ReGrowth: Core (WARNING: ReGrowth: Core MUST be loaded before ALL Rimcuisine 2 mods including mine)
 	</description>
 
 	<modDependencies>
